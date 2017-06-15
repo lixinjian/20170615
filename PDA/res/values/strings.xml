@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 登录、修改密码、退出 -->
+    <string name="login_error_password">密码输入错误</string>
+    <string name="login_error_username">用户名输入错误</string>
+    <string name="signout_pressagain">再按一次退出程序</string>
+    <string name="input_password_old">请输入原密码</string>
+    <string name="input_password_new">请输入新密码</string>
+    <string name="input_password_new_again">请确认新密码</string>
+    <string name="input_password_oldunlikenew">两次密码不一致</string>
+    <string name="modifypassword_success">修改密码成功！</string>
+    <string name="modify_password">修改密码</string>
+    <string name="app_crash_prompt">很抱歉,程序出现异常,即将退出!</string>
+    <string name="app_crash_prompt_feedback">问题已经成功反馈到服务器!</string>
+    
+    
+    <string name="delete">删除</string>
+    <string name="employee_choice">选择人员</string>
+    <string name="vehicle_choice">选择车辆</string>
+    <string name="app_name">PDA</string>
+    <string name="about">关于</string>
+    <string name="enterwarehouse">入库业务</string>
+    <string name="outwarehouse">出库业务</string>
+    <string name="stock">库存业务</string>
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="makesure_new_password">确认新密码</string>
+    <string name="makesure">确定</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="bill_code">订单号</string>
+    <string name="sku_code">SKU编码</string>
+    <string name="shelf_barcode">货&#160;&#160;位&#160;&#160;号: </string> 
+    <string name="sku_barcode">SKU条码: </string>
+    <string name="sku_name">SKU名称: </string>
+    <string name="sku_batch">SKU批次: </string>
+    <string name="sys_batch_no">批次: </string>
+    <string name="receiptor_name">收货员</string>
+    <string name="unit_name">包装单位:</string>
+    <string name="min_unit_name">最小单位 : </string>
+    <string name="submit">提交</string>
+    <string name="save">保存</string>
+    <string name="shelf_code">货&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位:</string>
+    <string name="produce_date">生产日期</string>
+    <string name="produce_batch_no">生产批次:</string>
+    <string name="received_unitqty">实收件数: </string>
+    <string name="received_min_unitqty">实收散数: </string>
+    <string name="expect_unit_qty">应捡件数: </string>
+    <string name="expect_min_unit_qty">应捡散数: </string>
+    <string name="expect_qty">应捡总数量: </string>
+    <string name="pick_qty">实捡总数量: </string>
+    <string name="pick_unit_qty">实捡件数: </string>
+    <string name="pick_min_unit_qty">实捡散数: </string>
+    <string name="qty">应收总数量 :</string>
+    <string name="receviedQty">实收总数量 :</string>
+   <!-- TODO: -->
+    <string name="unit_qty">退货件数</string>
+    <string name="unit_qty_">退货件数: </string>
+    <string name="min_unit_qty">退货散数</string>
+    <string name="min_unit_qty_">退货散数: </string>
+    <string name="total_count">总数量: </string>
+    <string name="item_count">总数量: </string>
+    <string name="putaway">上架业务</string>
+    <string name="putnumber">上架数量: </string>
+    <string name="putnumber_">已上架数量: </string>
+    <string name="wms">店商互联WMS系统</string>
+    <string name="header_back">返回</string>
+    <string name="warehouse">仓库</string>
+    <string name="user_name">用户名</string>
+    <string name="user_name_edt">请输入用户名</string>
+    <string name="password">密码</string>
+    <string name="password_edt">请输入密码</string>
+    <string name="remmber_password">记住登录密码</string>
+    <string name="login_btn">登录</string>
+    <string name="version">版本:</string>
+    <string name="purchase_orderbill">采购订单</string>
+    <string name="edt_txt">请输入商品名称</string>
+    <string name="menu">菜单键</string>
+    <string name="dshl2016">店商互联(北京)科技发展有限公司2016年</string>
+    <string name="sale_return_bill">退货申请单</string>
+    <string name="sale_return_bill_code">退货申请单号</string>
+    <string name="customer">客户</string>
+    <string name="sale_out_bill">销售出库</string>
+    <string name="pick_bill">拣货下架</string>
+    <string name="transferStore">移库业务</string>
+    <string name="goods_sku_select">商品选择</string>
+    <string name="shelf_batch_stock_select">货位批次库存选择</string>
+    <string name="driver_name">司机: </string>
+    <string name="shouldDeliverQty">应发总数量: </string>
+    <string name="actualDeliverQty">实发总数量: </string>
+    <string name="shouldUnitQty">应发件数: </string>
+    <string name="shouldMinUnitQty">应发散数: </string>
+    <string name="keeper">保管员: </string>
+    <string name="picker">拣货员: </string>
+    <string name="picked">待拣货</string>
+    <string name="cancellation">注销</string>
+    <string name="logout">退出</string>
+    <string name="goods_barCode">请输入商品条码</string>
+    <string name="addLine">增行</string>
+    <string name="spec">规格: </string>
+    <string name="add">添加</string>
+    <string name="code">编号: </string>
+    <string name="detail">详情</string>
+    <string name="putawaytaskquery">请选择上架任务单</string>
+    <string name="save_success">保存成功</string>
+    
+    <!-- 收货入库 -->
+    <string name="purchaseorder">收货入库</string>
+    <string name="purchase_enter_warehouse">采购收货入库</string>
+    <string name="supplier_enter_bill">采购收货入库(供应商来源)</string>
+    <string name="purchase_enter_detail_edit">采购入库明细录入</string>
+    <string name="purchase_enter_bill">采购入库单查看</string>
+    <string name="purchase_enter_detail">采购入库单明细查看</string>
+    <string name="purchase_order_bill">采购订单查看</string>
+    <string name="purchase_order_detail">采购订单明细查看</string>
+    <string name="supplier_order_bill">送货单查看</string>
+    <string name="supplier_order_detail">送货单明细查看</string>
+    
+    
+    <!-- 调拨入库 -->
+    <string name="allot">调拨入库</string>
+    <string name="allot_task_bill">调拨任务单</string>
+    <string name="allot_task_warehouse">调出仓库</string>
+    
+    <!-- 退货入库 -->
+    <string name="sale_return">退货入库</string>
+    <string name="sale_return_enter">销售退货入库</string>
+    <string name="sale_return_enter_bill">销售退货入库单查看</string>
+    <string name="sale_return_enter_detail">销售退货入库单明细查看</string>
+    <string name="sale_return_order_bill">销售退货申请单查看</string>
+    <string name="sale_return_order_detail">销售退货申请单明细查看</string>
+    <string name="sale_return_enter_detail_edit">销售退货入库明细录入</string>
+    <string name="produce_batch_no_selector">生产批次选择</string>
+
+    <!-- 盘点业务 -->
+    <string name="message">消息</string>
+    <string name="shelf_selector">选择货位</string>
+    <string name="shelf_take_stock">货位盘点</string>
+    <string name="take_stock_by_goods_sku">商品盘点</string>
+    <string name="dialog_submit_stock_take">您确定要提交盘点单吗?</string>
+    
+    
+    <!-- 查询业务 -->
+    <string name="query">查询业务</string>
+    <string name="shelf_query">货位批次库存查询</string>
+    <string name="store_stock_query">库区库存查询</string>
+    <string name="warehouse_stock_query">仓库库存查询</string>
+    <string name="warehouse_stock_query_detail">仓库库存查询详情</string>
+    <string name="shelf_query_detail">货位批次库存查询详情</string>
+    <string name="store_stock_query_detail">库区库存查询详情</string>
+   
+    <!-- 上下架业务 -->
+    <string name="putaway_task_list">上架任务列表</string>
+    <string name="goods_batch_detail">商品批次明细</string>
+    <string name="pick_bills">拣货单号</string>
+    <string name="title_pick_bill">拣货单</string>
+    <string name="title_pick_bill_list">拣货单列表</string>
+    <string name="title_pick_bill_view">拣货单查看</string>
+    <string name="pick_batch_detail_view">拣货单商品明细查看</string>
+    <string name="title_pick_bill_detail_view">拣货单明细查看</string>
+    <string name="title_pick_bill_manager">拣货单管理</string>
+    <string name="title_putaway">上架业务</string>
+    <string name="title_putaway_query">选择上架任务单</string>
+    <string name="title_transfer_query">选择移库任务单</string>
+    <string name="shift_store_bill">移库任务单</string>
+    <string name="shift_up_store_bill">移库上架任务单</string>
+    <string name="shift_down_store_bill">移库下架任务单</string>
+    <string name="title_transfer">移库单</string>
+    <string name="surplusNumber">剩余数量: </string>
+    <string name="skuName">sku名称: %1$s</string>
+    <string name="specName">规格: %1$s</string>
+    <string name="shelfCode">货位号: </string>
+    <string name="this_shelf_count">本次上架: </string>
+    <string name="store_name">库&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;区: </string>
+    <string name="putaway_task_bill_list">上架任务单列表</string>
+    <string name="putaway_task_detail">上架任务单明细</string>
+    <string name="putaway_task_detail_view">上架商品明细</string>
+    <string name="putaway_task_operation">上架操作</string>
+    
+    <!-- 出库业务 -->
+    <string name="purchase_return_bill">采购退货</string>
+    <string name="purchase_return_out">采购退货出库</string>
+    <string name="purchase_return_out_detail_edit">采购退货出库明细录入</string>
+    <string name="purchase_return_out_bill">采购退货出库单查看</string>
+    <string name="purchase_return_out_detail">采购退货出库单明细查看</string>
+    <string name="purchase_return_order_bill">采购退货订单查看</string>
+    <string name="purchase_return_order_detail">采购退货订单明细查看</string>
+    <string name="title_purchaseenterbill">退货申请单</string>
+    <string name="title_">销售出库</string>
+    <string name="title_deliver_goods">发货业务</string>
+    <string name="title_deliver_confirm">出库确认</string>
+    <string name="supplier_name">供应商</string>
+    <string name="shipment_bill">装运单号</string>
+    <string name="plateNo">车牌号: </string>
+    <string name="sale_order_bill">查看订单</string>
+    <string name="shipment_goods_detail">查看订单商品详情</string>
+    <string name="deliver_bill">送货单查看</string>
+    <string name="shipment_goods_detail_view">查看装运单商品明细</string>
+    <string name="deliver_goods_detail_view">查看送货单商品明细</string>
+    
+    <!-- dialog -->
+    
+    <string name="dialog_delete_all_not_read">你确定要清空未读消息吗?</string>
+    <string name="dialog_delete_all_read">你确定要清空已读消息吗?</string>
+    <string name="dialog_submit_title">提交确认</string>
+    <string name="dialog_save_title">保存确认</string>
+    <string name="dialog_save_putaway_task_detail">您确定要保存上架明细吗?</string>
+    <string name="dialog_delete_title">删除确认</string>
+    <string name="dialog_delete_putawaytask">您确定要删除该条上架记录吗?</string>
+    <string name="dialog_submit_receivedbill">你确定要提交收货单吗?</string>
+    <string name="dialog_submit_returnbill">您确定要提交退货单吗?</string>
+    <string name="dialog_cancel_title">注销确认</string>
+    <string name="dialog_cancel_detail">亲,确定要注销当前用户吗?</string>
+    <string name="dialog_signout_title">退出确认</string>
+    <string name="dialog_signout_detail">亲,确定要退出吗?</string>
+    <string name="dialog_submit_pickbill">您确定要提交拣货单吗?</string>
+    <string name="dialog_submit_shipmentbill">您确定要提交销售出库单吗?</string>
+    <string name="dialog_submit_putawaytaskbill">您确定要提交上架单吗?</string>
+    <string name="dialog_submit_stock_shift_bill">您确定要提交移库单吗?</string>
+    <string name="dialog_putaway_task">您确定要上架吗?</string>
+    <string name="dialog_register_for_work_on">上班登记</string>
+    <string name="dialog_register_for_work_off">下班登记</string>
+    <string name="dialog_register_for_work_on_detail">您现在处于未上班状态,是否进行上班登记?</string>
+    <string name="dialog_register_for_work_off_detail">您现在处于上班状态,是否进行下班登记?</string>
+    
+    <!-- 查询业务 -->
+    <string name="query_purchase_enter_bill_list">采购入库单列表</string>
+    <string name="query_purchase_enter_bill">采购入库单查看</string>
+    <string name="query_purchase_enter_detail">采购入库单明细查看</string>
+    <string name="query_sale_out_bill_list">销售出库单列表</string>
+    <string name="query_sale_out_bill">销售出库单查看</string>
+    <string name="query_sale_out_detail">销售出库单明细查看</string>
+    <string name="query_sku_stock_account_book">商品进销存账页</string>
+    <string name="shipment_bill_list">装运单列表</string>
+    <string name="shipment_bill_show">装运单明细</string>
+    
+    <!-- 消息 -->
+    <string name="message_system">系统消息</string>
+    <string name="message_application">应用消息</string>
+    <string name="message_title">消息中心</string>
+	<string name="message_setting_title">消息设置</string>
+    
+	<string name="listview_no_more">没有更多数据了</string>
+	
+</resources>

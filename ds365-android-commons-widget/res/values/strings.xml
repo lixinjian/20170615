@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">ds365-android-commons</string>
+	<string name="check_net">请检查网络!</string>
+	<string name="toastinfo">请求数据后重试！</string>
+	<string name="changeip">修改服务器IP和端口</string>
+	
+</resources>

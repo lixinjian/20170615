@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    xmlns:attrs="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.SubHeadTitleBar
+        android:id="@+id/putawayTaskBillList_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ds365.commons.widget.CommonTitleTab
+        android:id="@+id/putawayTaskBillList_titleTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:selectTextBackground="@color/tab_uncheck"
+        attr:textSize="@dimen/title_tab_text_size"
+        attr:selectTextColor="@color/tab_checked" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/putawayTaskBillList_putawayType_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="上架类型:" />
+
+            <com.ds365.commons.widget.DropDownListView
+                android:id="@+id/putawayTaskBillList_putawayType_value"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/putawayTaskBillList_putawayType_label"
+                attrs:allFlag="true"
+                attrs:displayFiled="name"
+                attrs:valueFiled="id"
+                attrs:valueFiledType="longType" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/putawayTaskBillList_billCode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="单据编号:" />
+
+            <com.ds365.commons.widget.SearchField
+                android:id="@+id/putawayTaskBillList_billCode_value"
+                style="@style/editTxtStyle_text"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/putawayTaskBillList_billCode_label" />
+
+            <ImageView
+                android:id="@+id/putawayTaskBillList_billCodeScan_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/putawayTaskBillList_billCode_value"
+                android:src="@drawable/code_scan" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/putawayTaskBillList_relatedBillCode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="入库单号:" />
+
+            <com.ds365.commons.widget.SearchField
+                android:id="@+id/putawayTaskBillList_relatedBillCode_value"
+                style="@style/editTxtStyle_text"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/putawayTaskBillList_relatedBillCode_label" />
+
+            <ImageView
+                android:id="@+id/putawayTaskBillList_relatedBillCodeScan_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/putawayTaskBillList_relatedBillCode_value"
+                android:src="@drawable/code_scan" />
+
+            <TextView
+                android:id="@+id/putawayTaskBillList_search_button"
+                style="@style/button_submit_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/putawayTaskBillList_relatedBillCodeScan_button"
+                android:text="查询" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/common_line" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/putawayTaskBillList_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

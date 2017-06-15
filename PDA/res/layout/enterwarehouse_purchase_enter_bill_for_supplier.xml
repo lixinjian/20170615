@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.SubHeadTitleBar
+        android:id="@+id/purchaseEnterBillForSupplier_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/purchaseEnterBillForSupplier_submitButton"
+        style="@style/button_submit_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_makeTime_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="日      期:" />
+
+        <com.ds365.commons.widget.DateField
+            android:id="@+id/purchaseEnterBillForSupplier_makeTime_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_makeTime_label"
+            attr:dateformat="yyyyMMddHHmmss"
+            attr:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_deliverBillNo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="发货单号:" />
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_deliverBillNo_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_deliverBillNo_label" 
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_relatedBillCode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="单 据 号:" />
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_relatedBillCode_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_relatedBillCode_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_supplierName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="供 应 商:" />
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_supplierName_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_supplierName_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_receiptorName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="收  货  员:" />
+
+        <EditText
+            android:id="@+id/purchaseEnterBillForSupplier_receiptorName_value"
+            style="@style/editTxtStyle_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_receiptorName_label" />
+
+        <ImageView
+            android:id="@+id/purchaseEnterBillForSupplier_receiptorName_searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_receiptorName_value"
+            android:src="@drawable/to_right" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_barCode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="sku 条码:" />
+
+        <EditText
+            android:id="@+id/purchaseEnterBillForSupplier_barCode_value"
+            style="@style/editTxtStyle_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_barCode_label" />
+
+        <ImageView
+            android:id="@+id/purchaseEnterBillForSupplier_barCode_Scan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_barCode_value"
+            android:src="@drawable/code_scan" />
+
+        <TextView
+            android:id="@+id/purchaseEnterBillForSupplier_barCodeSearchButton"
+            style="@style/button_submit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/purchaseEnterBillForSupplier_barCode_Scan_button"
+            android:text="查找" />
+    </RelativeLayout>
+
+    <include layout="@layout/common_line" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/purchaseEnterBillForSupplier_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

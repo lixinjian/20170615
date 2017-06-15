@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ds365.erp.pda"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 有关扫描二维码的权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 有关网络的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <application
+        android:name="com.ds365.erp.wms.pda.common.base.PdaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.login.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.login.activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseOrderBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnEnterBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseOrderBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnEnterDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.AllotOrderBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.EmployeeSelectorActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.ds365.erp.wms.pda.view.common.activity.VehicleSelectorActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.common.activity.CodeScanActivity" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.AllotOrderBillActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.AllotOrderDetailViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnOrderBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SupplierOrderBillShowActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SupplierOrderDetailShowActivity" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnOrderDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnEnterDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnEnterBillActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.login.activity.AboutActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.login.activity.EditPasswordActivity" />
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseOrderDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOrderBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOutBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOutDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOutBillActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOutDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.ShipmentOrderBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.DeliverGoodsDetailShowActivity" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.ShipmentOrderBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.DeliverBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.ShipmentOutBillActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOrderBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.shipmentout.activity.ShipmentGoodsDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.SaleOrderBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.outwarehouse.purchasereturn.activity.PurchaseReturnOrderDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutawayTaskDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutawayTaskBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutawayTaskBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutawayTaskDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutawayTaskDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailRegistForSingleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailRegistForSingleEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskForSingleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailForSingleDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillRegistForSingleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskListByBillCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskDetailListEditActivity"/>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailEditViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillRegistActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillDetailViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskCreateActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.ShiftStoreMainActivity" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.ShiftUpStoreListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.ShiftDownStoreListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.StockShiftBillActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBatchDetailShowActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.StockShiftDetailEditForUpActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.pick.activity.PickBillShowActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterBillActivity" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterBillActivity2" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterBillForSupplierActivity" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterDetailEditForSupplierActivity" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.PurchaseEnterDetailEditActivity2" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.enterwarehouse.activity.SaleReturnOrderBillListActivity" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SkuShelfBatchStockListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.PickBillListActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.PickBillShowActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.PickBatchDetailShowActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.ShipmentBillListActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.ShipmentBillShowActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.SkuStockAccountBookListActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.SkuStockAccountBookDetailShowActivity" />
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.SkuWarehouseStockListActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.SkuWarehouseStockShowActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.query.activity.SkuShelfBatchStockBySkuIdWarehouseIdSaleTypeActivity"/>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SaleOutDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.PurchaseEnterBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.PurchaseEnterBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.PurchaseEnterDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SaleOutBillListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SaleOutBillShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SkuShelfBatchStockShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.ShelfSelectorActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.StockTakeBySkuActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.StockTakeByGoodsSkuActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.StockTakeByGoodsSkuEditActivity"/>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.SkuShelfBatchStockForNormalListActivity"/>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.ShelfTaskStockGoodsDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.GoodsSkuSelectorActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.SkuShelfBatchStockSelectorActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.SkuBatchSelectorActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.common.activity.SaleOrderDetailShowActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.stock.putaway.activity.PutAwayTaskRecordEditActivity" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SkuStoreStockListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.query.activity.SkuStoreStockViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.StockTakeByShelfActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stocktake.activity.StockTakeByShelfDetailEditActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ds365.erp.wms.pda.view.stock.stockshift.activity.StockShiftBillForSingleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.message.activity.MessageActivity" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.message.activity.MessageListActivity" >
+        </activity>
+        <activity android:name="com.ds365.erp.wms.pda.view.message.activity.MessageDetailActivity" >
+        </activity>
+
+        <service
+            android:name="com.ds365.appupdate.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <service android:name="com.ds365.commons.message.NotificationService" />
+    </application>
+
+</manifest>

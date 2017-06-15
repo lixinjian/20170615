@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.SubHeadTitleBar
+        android:id="@+id/purchaseReturnOutBillShow_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/purchaseReturnOutBillShow_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_orderBillCode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="订单号:" />
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_orderBillCode_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/purchaseReturnOutBillShow_orderBillCode_label"
+                android:textColor="@color/textColor_value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_outBillCode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="出库单号:" />
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_outBillCode_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/purchaseReturnOutBillShow_outBillCode_label"
+                android:textColor="@color/textColor_value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_makeTime_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="日期:" />
+
+            <com.ds365.commons.widget.DateField
+                android:id="@+id/purchaseReturnOutBillShow_makeTime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/purchaseReturnOutBillShow_makeTime_label"
+                attr:dateformat="yyyyMMddHHmmss"
+                attr:textColor="@color/textColor_value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_supplierName_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="供应商:" />
+
+            <TextView
+                android:id="@+id/purchaseReturnOutBillShow_supplierName_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/purchaseReturnOutBillShow_supplierName_label"
+                android:textColor="@color/textColor_value" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/purchaseReturnOutBillShow_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        layout="@layout/common_line" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/purchaseReturnOutBillShow_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

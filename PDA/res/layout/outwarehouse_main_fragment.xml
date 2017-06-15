@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 出库业务 -->
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.MainHeadTitleBar
+        android:id="@+id/outwarehouse_headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/outWareHouse_PurchaseEnterBill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="#00CDCD" >
+
+            <ImageView
+                android:id="@+id/outWareHouse_PurchaseEnterBill_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/outWareHouse_PurchaseEnterBill_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/outWareHouse_PurchaseEnterBill_Img"
+                android:text="@string/purchase_return_bill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/outWareHouse_SaleOutBill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#00CDCD" >
+
+            <ImageView
+                android:id="@+id/outWareHouse_SaleOutBill_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/outWareHouse_SaleOutBill_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/outWareHouse_SaleOutBill_Img"
+                android:text="@string/sale_out_bill" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

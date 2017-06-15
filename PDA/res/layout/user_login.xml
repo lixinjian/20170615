@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/wms"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/login_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/header_back"
+            android:padding="8dp"
+            android:src="@drawable/header_leftbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_warehouseName_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_header"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/login_warehouseName_label"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:text="@string/warehouse"
+            android:textSize="18sp" />
+
+        <com.ds365.commons.widget.DropDownListView
+            android:id="@+id/login_warehouseName_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/login_warehouseName_label"
+            attrs:allFlag="false"
+            attrs:displayFiled="name"
+            attrs:valueFiled="id"
+            attrs:valueFiledType="longType" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_userName_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_warehouseName_relativeLayout"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/login_userName_label"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:text="@string/user_name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/login_userName_editText"
+            style="@style/editTxtStyle_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/login_userName_label"
+            android:hint="@string/user_name_edt"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_passord_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_userName_relativeLayout"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/login_password_label"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:text="@string/password"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/login_password_editText"
+            style="@style/password_editText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/login_password_label"
+            android:hint="@string/password_edt"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_verifyCode_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_passord_relativeLayout"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/login_verifyCode_label"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:text="验证码"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/login_verifyCode_value"
+            style="@style/editTxtStyle_number"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/login_verifyCode_label"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/login_verifyCode_image"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/login_verifyCode_value"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/login_checkBox_rememberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_verifyCode_relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/remmber_password" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/loginButtonStyle"
+        android:layout_below="@id/login_checkBox_rememberPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/login_version_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/version" />
+
+        <TextView
+            android:id="@+id/login_version_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/login_version_label" />
+    </RelativeLayout>
+
+    <com.ds365.commons.widget.ChangeAppIpView
+        android:id="@+id/login_changeIP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

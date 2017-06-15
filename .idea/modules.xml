@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/20170615.iml" filepath="$PROJECT_DIR$/20170615.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsyncHttpClientLibrary/AsyncHttpClientLibrary.iml" filepath="$PROJECT_DIR$/AsyncHttpClientLibrary/AsyncHttpClientLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeScan/CodeScan.iml" filepath="$PROJECT_DIR$/CodeScan/CodeScan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDA/PDA.iml" filepath="$PROJECT_DIR$/PDA/PDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoSelector/PhotoSelector.iml" filepath="$PROJECT_DIR$/PhotoSelector/PhotoSelector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefreshListView/PullToRefreshListView.iml" filepath="$PROJECT_DIR$/PullToRefreshListView/PullToRefreshListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-update/app-update.iml" filepath="$PROJECT_DIR$/app-update/app-update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds365-android-commons/ds365-android-commons.iml" filepath="$PROJECT_DIR$/ds365-android-commons/ds365-android-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds365-android-commons-widget/ds365-android-commons-widget.iml" filepath="$PROJECT_DIR$/ds365-android-commons-widget/ds365-android-commons-widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeListView/swipeListView.iml" filepath="$PROJECT_DIR$/swipeListView/swipeListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheel/wheel.iml" filepath="$PROJECT_DIR$/wheel/wheel.iml" />
+    </modules>
+  </component>
+</project>

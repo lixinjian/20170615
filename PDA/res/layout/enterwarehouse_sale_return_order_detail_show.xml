@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.SubHeadTitleBar
+        android:id="@+id/saleReturnOrderDetailShow_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_skuCode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sku编码:" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_skuCode_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_skuCode_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_skuName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sku名称:" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_skuName_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_skuName_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_unitName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_name" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_unitName_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_unitName_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_minUnitName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/min_unit_name" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_minUnitName_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_minUnitName_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_storeName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/store_name" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_storeName_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_storeName_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_shelfCode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/shelf_code" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_shelfCode_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_shelfCode_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_sysBatchNo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="批   次:" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_sysBatchNo_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_sysBatchNo_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_produceBatchNo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="批   号:" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_produceBatchNo_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_produceBatchNo_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_produceDate_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="生产日期:" />
+
+        <com.ds365.commons.widget.DateField
+            android:id="@+id/saleReturnOrderDetailShow_produceDate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_produceDate_label"
+            attr:textColor="@color/textColor_value"
+            attr:dateformat="yyyyMMdd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_unitqty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/received_unitqty" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_unitqty_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_unitqty_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_minUnitQty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/received_min_unitqty" />
+
+        <TextView
+            android:id="@+id/saleReturnOrderDetailShow_minUnitQty_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/saleReturnOrderDetailShow_minUnitQty_label"
+            android:textColor="@color/textColor_value" />
+    </RelativeLayout>
+
+</LinearLayout>

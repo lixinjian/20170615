@@ -1,0 +1,5 @@
+<resources>
+
+    <!-- 1280*720 -->
+    <dimen name="title_tab_text_size">6sp</dimen>
+</resources>

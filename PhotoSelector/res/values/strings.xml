@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhotoSelector</string>
+    <string name="select_more">超出可选张数</string>
+
+</resources>

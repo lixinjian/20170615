@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <!-- <com.ds365.erp.wms.pda.common.widget.SearchView -->
+
+    <EditText
+        android:id="@+id/search_layout_edt"
+        style="@style/editTxtStyle_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/search_layout_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/search_layout_edt"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:src="@drawable/search" />
+
+</LinearLayout>

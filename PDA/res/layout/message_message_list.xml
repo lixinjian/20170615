@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.ds365.erp.pda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <com.ds365.erp.wms.pda.common.headtitlebar.SubHeadTitleBar
+        android:id="@+id/messagelist_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ds365.commons.widget.CommonTitleTab
+        android:id="@+id/messagelist_titleTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        attr:selectTextBackground="@color/tab_uncheck"
+        attr:textSize="@dimen/title_tab_text_size"
+        attr:selectTextColor="@color/tab_checked" />
+
+    <ImageView
+        android:id="@+id/messagelist_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="3dp"
+        android:src="@drawable/message_delete" />
+
+    <!-- 
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/messagelist_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:divider="@null"
+        ptr:ptrListViewExtrasEnabled="true"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        ptr:ptrShowIndicator="false" />
+         -->
+    <com.ds365.swipelistview.SwipeMenuListView
+        android:id="@+id/messagelist_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="0.8dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never" />
+
+</LinearLayout>
