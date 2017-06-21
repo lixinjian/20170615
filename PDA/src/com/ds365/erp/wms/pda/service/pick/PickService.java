@@ -63,7 +63,7 @@ public class PickService extends AbstractBaseService{
 		
 		
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(url);

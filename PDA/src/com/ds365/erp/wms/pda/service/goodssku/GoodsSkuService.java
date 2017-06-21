@@ -23,7 +23,7 @@ public class GoodsSkuService {
 			ServiceCallBack<QueryResult<GoodsSkuModel>> callBack) {
 
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(ConstantUrl.goods_goodsSku_searchPageGoodsSkuByParams);

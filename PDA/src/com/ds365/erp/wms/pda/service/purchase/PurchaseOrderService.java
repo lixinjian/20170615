@@ -63,7 +63,7 @@ public class PurchaseOrderService {
 			ServiceCallBack<QueryResult<PurchaseOrderBillModel>> callBack){
 		
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(url);
@@ -123,7 +123,7 @@ public class PurchaseOrderService {
 			ServiceCallBack<QueryResult<PurchaseReturnOrderBillModel>> callBack){
 		
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(url);

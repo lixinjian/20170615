@@ -18,7 +18,9 @@ import com.ds365.erp.wms.pda.view.login.activity.EditPasswordActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -46,8 +48,15 @@ public class MenuWindow extends PopupWindow implements OnClickListener{
 		this.context = (Activity) context;
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		conentView = inflater.inflate(R.layout.user_popup_window, null);
-		int h = context.getWindowManager().getDefaultDisplay().getHeight();
-		int w = context.getWindowManager().getDefaultDisplay().getWidth();
+
+		Display display = context.getWindowManager().getDefaultDisplay();
+		Point size = new Point();
+		display.getSize(size);
+		int w = size.x;
+		int h = size.y;
+//		int h = context.getWindowManager().getDefaultDisplay().getHeight();
+//		int w = context.getWindowManager().getDefaultDisplay().getWidth();
+
 		// 设置SelectPicPopupWindow的View
 		this.setContentView(conentView);
 		// 设置SelectPicPopupWindow弹出窗体的宽

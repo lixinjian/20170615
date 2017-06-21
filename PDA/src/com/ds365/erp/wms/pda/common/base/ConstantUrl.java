@@ -10,7 +10,7 @@ public class ConstantUrl {
 	 */
 //	public static String IP = "http://192.168.16.52:8080/";
 //	public static String ip = "cdpplus.ds365.com";
-	public static String ip = "192.168.62.169";
+	public static String ip = "123.56.202.181:8080";
 	
 	
 	//消息地址

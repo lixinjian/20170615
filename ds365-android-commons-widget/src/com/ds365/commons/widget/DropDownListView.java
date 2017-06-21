@@ -137,7 +137,7 @@ public class DropDownListView<E extends Serializable> extends LinearLayout{
 	}
 	/**
 	 * 设置数据
-	 * @param list
+	 * @param
 	 */
 	public void setItemsData(Map<Integer,MapItem<E>> hashMap){
 		map = hashMap;
@@ -192,7 +192,6 @@ public class DropDownListView<E extends Serializable> extends LinearLayout{
 					}
 				}
 			}
-
 		}) {});
 	}
 

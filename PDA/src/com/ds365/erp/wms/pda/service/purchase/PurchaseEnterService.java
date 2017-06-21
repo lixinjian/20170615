@@ -50,7 +50,7 @@ public class PurchaseEnterService extends AbstractBaseService{
 
 		RequestParamsModel params = new RequestParamsModel();
 		
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		
@@ -84,7 +84,7 @@ public class PurchaseEnterService extends AbstractBaseService{
 			ServiceCallBack<QueryResult<PurchaseReturnOutBillModel>> callBack) {
 
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(queryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(queryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(ConstantUrl.purchase_purchase_searchPagePurchaseEnterBillByParams);

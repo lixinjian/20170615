@@ -34,7 +34,7 @@ public class EmployeeWorkService {
 			ServiceCallBack<QueryResult<EmployeeWorkStateModel>> callBack) {
 		
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(employeeWorkStateQueryParamsModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(employeeWorkStateQueryParamsModel);
 		
 		params.setParams(map);
 		params.setUrl(ConstantUrl.employee_work_searchPageForWorkStateByParams);
@@ -76,7 +76,7 @@ public class EmployeeWorkService {
 	private void registerForWork(String url, EmployeeWorkRegisterModel employeeWorkRegisterModel, ServiceCallBack<JsonResult> callBack){
 		
 		RequestParamsModel params = new RequestParamsModel();
-		Map map  = (Map) BeanUtils.beanToMap(employeeWorkRegisterModel);
+		Map<String,Object> map  = BeanUtils.beanToMap(employeeWorkRegisterModel);
 		
 		params.setParams(map);
 		params.setUrl(url);
